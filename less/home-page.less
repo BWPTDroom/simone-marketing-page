@@ -9,7 +9,6 @@
     header {
         display: flex;
         flex-direction: column;
-        width: 100%;
         align-items: center;
         margin-top: 40px;
     
@@ -144,6 +143,7 @@
         padding: 15px;
         .center();
         flex-direction: row;
+        align-items: center;
 
         @media @tablet {
             flex-direction: column;
@@ -151,7 +151,7 @@
 
         img {
             border-radius: 28px;
-            height: 400px;
+            height: auto;
             padding: 10px;
 
             @media @tablet {
@@ -169,25 +169,27 @@
 
 
         .text-box{
-            background: @medium2;
-            border-radius: 28px;
-            margin: 25px;
+            background: @light;
+            border-top: 2px solid @medium2;
+            border-bottom: 2px solid @medium2;
+            // border-radius: 28px;
+            margin: 30px;
+            height: auto;
             padding: 15px;
             width: 50%;
+            font-family: @content;
+            color: @dark2;
+            text-align: center;
+            width: 40%;
+
 
             h2{
-                text-align: center;
                 font-size: 2rem;
-                color: @dark;
-                font-family: @header;
             }
     
             p {
-                font-family: @content;
-                font-size: 1.5rem;
-                margin: 40px;
-                text-align: center;
-                color: @dark;
+                font-size: 1.75rem;
+
             }
 
             @media @tablet {
