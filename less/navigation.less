@@ -1,9 +1,6 @@
 .navigation {
     padding: 20px;
-
-    .nav {
-
-        width: 50px;
+    width: 50px;
     
         div {
             height: 8px;
@@ -28,11 +25,44 @@
         .three {
             width: 45px;
         }
-    }
 
     @media @tablet {
         
     }
+}
+
+.show-menu {
+    background: @medium2;
+    width: 20%;
+    height: 770px;
+    top: 0;
+    position: absolute;
+
+    li {
+        height: 20px;
+        padding: 20px;
+        border-bottom: 1px solid @medium;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            font-family: @content;
+            font-size: 1.75rem;
+            color: @dark;
+        }
+
+        .active {
+            color: @medium;
+        }
+
+        a:hover {
+            color: @medium;
+        }
+    }
+}
+
+.hide-menu {
+    visibility: hidden;
 }
 
 

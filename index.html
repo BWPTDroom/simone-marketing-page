@@ -15,18 +15,21 @@
 
     <div class= 'banner'>
 
-      <div class='navigation'>
-      <a href='about.html' class='nav'>
+    <div class='navigation' id='navigation'>
+      <a href='#'>
         <div class='one'></div>
         <div class='two'></div>
         <div class='three'></div>
       </a>
     </div>
-        
-        <!-- <a href='#'>Companies</a>
-        <a href='#'>About Us</a>
-        <a href='#'>Contact Us</a>
-      </nav>   -->
+
+    <div class='menu hide-menu show-menu' id='show-menu' >
+      <li id='exit'><img src='../images/exit (1).svg'></li>
+      <li><a class='active' href='index.html'>Home</a></li>
+      <li><a href='about.html'>About Us</a></li>
+      <li><a href='#'>Partnerships</a></li>
+      <li><a href='#'>Contact</a></li>
+    </div>
 
       <header>
         <h1 class='title'>DROOM</h1>
@@ -96,6 +99,22 @@
     </section> 
 
   </body>
+
+  <script>
+    let burger = document.getElementById('navigation');
+    let menu = document.getElementbyId('show-menu');
+    let exit = document.getElementById('exit');
+
+    burger.addEventListener('click', function(x) {
+      menu.classList.toggle('show-menu');
+      x.preventDefault();
+    });
+
+    exit.addEventListener('click', function(x) {
+      burger.classList.toggle('hide-menu');
+      x.preventDefault();
+    })
+  </script>
 
   <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
   <script src='menu.js'></script>
