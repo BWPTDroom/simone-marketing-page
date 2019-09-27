@@ -267,6 +267,13 @@ h1 {
   text-align: center;
   width: 40%;
 }
+.job-listings .job-cards .text-box a {
+  text-decoration: none;
+  color: #327A77;
+}
+.job-listings .job-cards .text-box a:hover {
+  color: #17242A;
+}
 .job-listings .job-cards .text-box h2 {
   font-size: 2rem;
 }
