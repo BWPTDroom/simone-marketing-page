@@ -1,0 +1,86 @@
+.navigation {
+    padding: 20px;
+    width: 50px;
+    
+        div {
+            height: 8px;
+            background-color: @light;
+            margin: 8px 0;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+    
+        div:hover {
+            width: 50px;
+        }
+    
+        .one {
+            width: 45px;
+        }
+    
+        .two {
+            width: 38px;
+        }
+    
+        .three {
+            width: 45px;
+        }
+
+    @media @tablet {
+        
+    }
+}
+
+.show-menu {
+    background: @medium2;
+    width: 20%;
+    height: 426px;
+    top: 0;
+    position: absolute;
+    text-align: left;
+    li {
+        height: 20px;
+        padding: 20px;
+        border-bottom: 1px solid @medium;
+        border-right: 1px solid @medium;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            font-family: @content;
+            font-size: 1.75rem;
+            color: @dark;
+        }
+
+        .active {
+            color: @medium;
+        }
+
+        a:hover {
+            color: @medium;
+        }
+    }
+}
+
+.hide-menu {
+    visibility: hidden;
+}
+
+
+
+
+// li {
+
+//     a {
+//         justify-content: space-between;
+//         padding-right: 10px;
+//         height: 20%;
+//         font-size: 2rem;
+//         text-decoration: none;
+//         color: @medium;
+//         font-family: @header;
+//         flex-direction: column;
+//         background: @light;
+//     }
+// }
+
